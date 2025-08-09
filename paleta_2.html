@@ -1,0 +1,3221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Paleta de Colores Responsive</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body {
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,sans-serif;
+     margin:0;
+     padding:0;
+     background:#f7f7f7;
+     color:#222;
+}
+ .container {
+    max-width:1200px;
+     margin:0 auto;
+     padding:16px;
+}
+ h1 {
+    text-align:center;
+     margin-bottom:8px;
+}
+ .tabs {
+    display:flex;
+     flex-wrap: wrap;
+     gap:8px;
+     margin-bottom:16px;
+     justify-content:center;
+}
+ .tab-button {
+    cursor:pointer;
+     padding:8px 12px;
+     border:none;
+     border-radius:6px;
+     /*background:#e0e0e0;*/
+     color: white;
+     font-weight:600;
+     flex:1 0 100px;
+     min-width:80px;
+     position:relative;
+}
+ .tab-button.active {
+    background:#444;
+     color:#fff;
+}
+ .paleta {
+    display:grid;
+     gap:8px;
+     grid-template-columns:repeat(8,1fr);
+}
+ @media (max-width:1024px){
+    .paleta{
+        grid-template-columns:repeat(6,1fr);
+    }
+}
+ @media (max-width:768px){
+    .paleta{
+        grid-template-columns:repeat(4,1fr);
+    }
+}
+ @media (max-width:480px){
+    .paleta{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+ .box_color {
+    aspect-ratio:1;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     border-radius:6px;
+     background:#ddd;
+     position:relative;
+     overflow:hidden;
+     font-size:0.8rem;
+     font-weight:600;
+     letter-spacing:0.5px;
+}
+ .box_color span {
+    pointer-events:none;
+}
+/* color label overlay */
+ .box_color .code-label {
+    position:absolute;
+     bottom:4px;
+     right:4px;
+     background:rgba(0,0,0,0.4);
+     color:#fff;
+     padding:2px 6px;
+     border-radius:4px;
+     font-size:0.6rem;
+}
+/* Simple fade */
+ .paleta-wrapper {
+    display:none;
+}
+ .paleta-wrapper.active {
+    display:block;
+}
+ .tab-button[data-target="tab-rojos"] {
+    background-color: #d27e6c !important;
+    /* Color rojo */
+}
+ .tab-button[data-target="tab-naranjas"] {
+    background-color: #ff8c42;
+    /* Color naranja */
+}
+ .tab-button[data-target="tab-amarillos"] {
+    background-color: #ffdd57;
+    /* Color amarillo */
+}
+ .tab-button[data-target="tab-violetas"] {
+    background-color: #9b59b6;
+    /* Color violeta */
+}
+ .tab-button[data-target="tab-verdes"] {
+    background-color: #2ecc71;
+    /* Color verde */
+}
+ .tab-button[data-target="tab-azules"] {
+    background-color: #3498db;
+    /* Color azul */
+}
+ .tab-button[data-target="tab-marrones"] {
+    background-color: #8e5c42;
+    /* Color marrón */
+}
+ .tab-button[data-target="tab-grises"] {
+    background-color: #7f8c8d;
+    /* Color gris */
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Paleta de Colores</h1>
+  <div class="tabs" role="tablist">
+
+    <button class="tab-button" data-target="tab-rojos" role="tab" aria-controls="tab-rojos">Rojo</button>
+    <button class="tab-button" data-target="tab-naranjas" role="tab" aria-controls="tab-naranjas">Naranja</button>
+    <button class="tab-button" data-target="tab-amarillos" role="tab" aria-controls="tab-amarillos">Amarillo</button>
+    <button class="tab-button" data-target="tab-violetas" role="tab" aria-controls="tab-violetas">Violeta</button>
+    <button class="tab-button" data-target="tab-verdes" role="tab" aria-controls="tab-verdes">Verde</button>
+    <button class="tab-button" data-target="tab-azules" role="tab" aria-controls="tab-azules">Azul</button>
+    <button class="tab-button" data-target="tab-marrones" role="tab" aria-controls="tab-marrones">Marrón</button>
+    <button class="tab-button" data-target="tab-grises" role="tab" aria-controls="tab-grises">Gris</button>
+  </div>
+  <div class="paleta-wrapper" id="tab-rojos">
+    <div class="paleta" aria-label="Rojo">
+      <div class="box_color" data-codigo="X039">
+        <span>X039</span>
+      </div>
+      <div class="box_color" data-codigo="L137">
+        <span>L137</span>
+      </div>
+      <div class="box_color" data-codigo="K137">
+        <span>K137</span>
+      </div>
+      <div class="box_color" data-codigo="J137">
+        <span>J137</span>
+      </div>
+      <div class="box_color" data-codigo="H137">
+        <span>H137</span>
+      </div>
+      <div class="box_color" data-codigo="G137">
+        <span>G137</span>
+      </div>
+      <div class="box_color" data-codigo="F137">
+        <span>F137</span>
+      </div>
+      <div class="box_color" data-codigo="V136">
+        <span>V136</span>
+      </div>
+      <div class="box_color" data-codigo="S136">
+        <span>S136</span>
+      </div>
+      <div class="box_color" data-codigo="N136">
+        <span>N136</span>
+      </div>
+      <div class="box_color" data-codigo="M136">
+        <span>M136</span>
+      </div>
+      <div class="box_color" data-codigo="L136">
+        <span>L136</span>
+      </div>
+      <div class="box_color" data-codigo="K136">
+        <span>K136</span>
+      </div>
+      <div class="box_color" data-codigo="J136">
+        <span>J136</span>
+      </div>
+      <div class="box_color" data-codigo="H136">
+        <span>H136</span>
+      </div>
+      <div class="box_color" data-codigo="G136">
+        <span>G136</span>
+      </div>
+      <div class="box_color" data-codigo="F136">
+        <span>F136</span>
+      </div>
+      <div class="box_color" data-codigo="V135">
+        <span>V135</span>
+      </div>
+      <div class="box_color" data-codigo="S135">
+        <span>S135</span>
+      </div>
+      <div class="box_color" data-codigo="N135">
+        <span>N135</span>
+      </div>
+      <div class="box_color" data-codigo="M135">
+        <span>M135</span>
+      </div>
+      <div class="box_color" data-codigo="L135">
+        <span>L135</span>
+      </div>
+      <div class="box_color" data-codigo="K135">
+        <span>K135</span>
+      </div>
+      <div class="box_color" data-codigo="J135">
+        <span>J135</span>
+      </div>
+      <div class="box_color" data-codigo="H135">
+        <span>H135</span>
+      </div>
+      <div class="box_color" data-codigo="G135">
+        <span>G135</span>
+      </div>
+      <div class="box_color" data-codigo="F135">
+        <span>F135</span>
+      </div>
+      <div class="box_color" data-codigo="V134">
+        <span>V134</span>
+      </div>
+      <div class="box_color" data-codigo="S134">
+        <span>S134</span>
+      </div>
+      <div class="box_color" data-codigo="F139">
+        <span>F139</span>
+      </div>
+      <div class="box_color" data-codigo="G139">
+        <span>G139</span>
+      </div>
+      <div class="box_color" data-codigo="H139">
+        <span>H139</span>
+      </div>
+      <div class="box_color" data-codigo="J139">
+        <span>J139</span>
+      </div>
+      <div class="box_color" data-codigo="K139">
+        <span>K139</span>
+      </div>
+      <div class="box_color" data-codigo="L139">
+        <span>L139</span>
+      </div>
+      <div class="box_color" data-codigo="M139">
+        <span>M139</span>
+      </div>
+      <div class="box_color" data-codigo="N139">
+        <span>N139</span>
+      </div>
+      <div class="box_color" data-codigo="S139">
+        <span>S139</span>
+      </div>
+      <div class="box_color" data-codigo="V139">
+        <span>V139</span>
+      </div>
+      <div class="box_color" data-codigo="F140">
+        <span>F140</span>
+      </div>
+      <div class="box_color" data-codigo="G140">
+        <span>G140</span>
+      </div>
+      <div class="box_color" data-codigo="H140">
+        <span>H140</span>
+      </div>
+      <div class="box_color" data-codigo="J140">
+        <span>J140</span>
+      </div>
+      <div class="box_color" data-codigo="K140">
+        <span>K140</span>
+      </div>
+      <div class="box_color" data-codigo="L140">
+        <span>L140</span>
+      </div>
+      <div class="box_color" data-codigo="N140">
+        <span>N140</span>
+      </div>
+      <div class="box_color" data-codigo="S140">
+        <span>S140</span>
+      </div>
+      <div class="box_color" data-codigo="V140">
+        <span>V140</span>
+      </div>
+      <div class="box_color" data-codigo="X016">
+        <span>X016</span>
+      </div>
+      <div class="box_color" data-codigo="Y016">
+        <span>Y016</span>
+      </div>
+      <div class="box_color" data-codigo="X017">
+        <span>X017</span>
+      </div>
+      <div class="box_color" data-codigo="Y017">
+        <span>Y017</span>
+      </div>
+      <div class="box_color" data-codigo="X018">
+        <span>X018</span>
+      </div>
+      <div class="box_color" data-codigo="Y018">
+        <span>Y018</span>
+      </div>
+      <div class="box_color" data-codigo="M137">
+        <span>M137</span>
+      </div>
+      <div class="box_color" data-codigo="N137">
+        <span>N137</span>
+      </div>
+      <div class="box_color" data-codigo="S137">
+        <span>S137</span>
+      </div>
+      <div class="box_color" data-codigo="V137">
+        <span>V137</span>
+      </div>
+      <div class="box_color" data-codigo="F138">
+        <span>F138</span>
+      </div>
+      <div class="box_color" data-codigo="G138">
+        <span>G138</span>
+      </div>
+      <div class="box_color" data-codigo="H138">
+        <span>H138</span>
+      </div>
+      <div class="box_color" data-codigo="J138">
+        <span>J138</span>
+      </div>
+      <div class="box_color" data-codigo="K138">
+        <span>K138</span>
+      </div>
+      <div class="box_color" data-codigo="L138">
+        <span>L138</span>
+      </div>
+      <div class="box_color" data-codigo="M138">
+        <span>M138</span>
+      </div>
+      <div class="box_color" data-codigo="N138">
+        <span>N138</span>
+      </div>
+      <div class="box_color" data-codigo="S138">
+        <span>S138</span>
+      </div>
+      <div class="box_color" data-codigo="V138">
+        <span>V138</span>
+      </div>
+      <div class="box_color" data-codigo="F129">
+        <span>F129</span>
+      </div>
+      <div class="box_color" data-codigo="G129">
+        <span>G129</span>
+      </div>
+      <div class="box_color" data-codigo="H129">
+        <span>H129</span>
+      </div>
+      <div class="box_color" data-codigo="J129">
+        <span>J129</span>
+      </div>
+      <div class="box_color" data-codigo="K129">
+        <span>K129</span>
+      </div>
+      <div class="box_color" data-codigo="L129">
+        <span>L129</span>
+      </div>
+      <div class="box_color" data-codigo="M129">
+        <span>M129</span>
+      </div>
+      <div class="box_color" data-codigo="N129">
+        <span>N129</span>
+      </div>
+      <div class="box_color" data-codigo="S129">
+        <span>S129</span>
+      </div>
+      <div class="box_color" data-codigo="V129">
+        <span>V129</span>
+      </div>
+      <div class="box_color" data-codigo="F130">
+        <span>F130</span>
+      </div>
+      <div class="box_color" data-codigo="G130">
+        <span>G130</span>
+      </div>
+      <div class="box_color" data-codigo="H130">
+        <span>H130</span>
+      </div>
+      <div class="box_color" data-codigo="J130">
+        <span>J130</span>
+      </div>
+      <div class="box_color" data-codigo="K130">
+        <span>K130</span>
+      </div>
+      <div class="box_color" data-codigo="L130">
+        <span>L130</span>
+      </div>
+      <div class="box_color" data-codigo="M130">
+        <span>M130</span>
+      </div>
+      <div class="box_color" data-codigo="N130">
+        <span>N130</span>
+      </div>
+      <div class="box_color" data-codigo="S130">
+        <span>S130</span>
+      </div>
+      <div class="box_color" data-codigo="V130">
+        <span>V130</span>
+      </div>
+      <div class="box_color" data-codigo="F134">
+        <span>F134</span>
+      </div>
+      <div class="box_color" data-codigo="G134">
+        <span>G134</span>
+      </div>
+      <div class="box_color" data-codigo="H134">
+        <span>H134</span>
+      </div>
+      <div class="box_color" data-codigo="J134">
+        <span>J134</span>
+      </div>
+      <div class="box_color" data-codigo="K134">
+        <span>K134</span>
+      </div>
+      <div class="box_color" data-codigo="L134">
+        <span>L134</span>
+      </div>
+      <div class="box_color" data-codigo="M134">
+        <span>M134</span>
+      </div>
+      <div class="box_color" data-codigo="N134">
+        <span>N134</span>
+      </div>
+    </div>
+  </div>
+  <div class="paleta-wrapper" id="tab-naranjas">
+    <div class="paleta" aria-label="Naranja">
+      <div class="box_color" data-codigo="Y029">
+        <span>Y029</span>
+      </div>
+      <div class="box_color" data-codigo="V090">
+        <span>V090</span>
+      </div>
+      <div class="box_color" data-codigo="M140">
+        <span>M140</span>
+      </div>
+      <div class="box_color" data-codigo="X030">
+        <span>X030</span>
+      </div>
+      <div class="box_color" data-codigo="Y030">
+        <span>Y030</span>
+      </div>
+      <div class="box_color" data-codigo="X050">
+        <span>X050</span>
+      </div>
+      <div class="box_color" data-codigo="Y050">
+        <span>Y050</span>
+      </div>
+      <div class="box_color" data-codigo="X052">
+        <span>X052</span>
+      </div>
+      <div class="box_color" data-codigo="Y052">
+        <span>Y052</span>
+      </div>
+      <div class="box_color" data-codigo="X058">
+        <span>X058</span>
+      </div>
+      <div class="box_color" data-codigo="Y058">
+        <span>Y058</span>
+      </div>
+      <div class="box_color" data-codigo="X060">
+        <span>X060</span>
+      </div>
+      <div class="box_color" data-codigo="Y060">
+        <span>Y060</span>
+      </div>
+      <div class="box_color" data-codigo="X155">
+        <span>X155</span>
+      </div>
+      <div class="box_color" data-codigo="Y155">
+        <span>Y155</span>
+      </div>
+      <div class="box_color" data-codigo="X162">
+        <span>X162</span>
+      </div>
+      <div class="box_color" data-codigo="Y162">
+        <span>Y162</span>
+      </div>
+      <div class="box_color" data-codigo="F095">
+        <span>F095</span>
+      </div>
+      <div class="box_color" data-codigo="G095">
+        <span>G095</span>
+      </div>
+      <div class="box_color" data-codigo="H095">
+        <span>H095</span>
+      </div>
+      <div class="box_color" data-codigo="J095">
+        <span>J095</span>
+      </div>
+      <div class="box_color" data-codigo="K095">
+        <span>K095</span>
+      </div>
+      <div class="box_color" data-codigo="L095">
+        <span>L095</span>
+      </div>
+      <div class="box_color" data-codigo="M095">
+        <span>M095</span>
+      </div>
+      <div class="box_color" data-codigo="N095">
+        <span>N095</span>
+      </div>
+      <div class="box_color" data-codigo="S095">
+        <span>S095</span>
+      </div>
+      <div class="box_color" data-codigo="V095">
+        <span>V095</span>
+      </div>
+      <div class="box_color" data-codigo="F096">
+        <span>F096</span>
+      </div>
+      <div class="box_color" data-codigo="G096">
+        <span>G096</span>
+      </div>
+      <div class="box_color" data-codigo="H096">
+        <span>H096</span>
+      </div>
+      <div class="box_color" data-codigo="J096">
+        <span>J096</span>
+      </div>
+      <div class="box_color" data-codigo="K096">
+        <span>K096</span>
+      </div>
+      <div class="box_color" data-codigo="M096">
+        <span>M096</span>
+      </div>
+      <div class="box_color" data-codigo="N096">
+        <span>N096</span>
+      </div>
+      <div class="box_color" data-codigo="S096">
+        <span>S096</span>
+      </div>
+      <div class="box_color" data-codigo="V096">
+        <span>V096</span>
+      </div>
+      <div class="box_color" data-codigo="X021">
+        <span>X021</span>
+      </div>
+      <div class="box_color" data-codigo="Y021">
+        <span>Y021</span>
+      </div>
+      <div class="box_color" data-codigo="L096">
+        <span>L096</span>
+      </div>
+      <div class="box_color" data-codigo="X029">
+        <span>X029</span>
+      </div>
+      <div class="box_color" data-codigo="S090">
+        <span>S090</span>
+      </div>
+      <div class="box_color" data-codigo="G087">
+        <span>G087</span>
+      </div>
+      <div class="box_color" data-codigo="H087">
+        <span>H087</span>
+      </div>
+      <div class="box_color" data-codigo="L087">
+        <span>L087</span>
+      </div>
+      <div class="box_color" data-codigo="M087">
+        <span>M087</span>
+      </div>
+      <div class="box_color" data-codigo="G089">
+        <span>G089</span>
+      </div>
+      <div class="box_color" data-codigo="J089">
+        <span>J089</span>
+      </div>
+      <div class="box_color" data-codigo="N089">
+        <span>N089</span>
+      </div>
+      <div class="box_color" data-codigo="S089">
+        <span>S089</span>
+      </div>
+      <div class="box_color" data-codigo="F090">
+        <span>F090</span>
+      </div>
+      <div class="box_color" data-codigo="H090">
+        <span>H090</span>
+      </div>
+      <div class="box_color" data-codigo="J090">
+        <span>J090</span>
+      </div>
+      <div class="box_color" data-codigo="K090">
+        <span>K090</span>
+      </div>
+      <div class="box_color" data-codigo="M090">
+        <span>M090</span>
+      </div>
+      <div class="box_color" data-codigo="S087">
+        <span>S087</span>
+      </div>
+      <div class="box_color" data-codigo="V087">
+        <span>V087</span>
+      </div>
+      <div class="box_color" data-codigo="F089">
+        <span>F089</span>
+      </div>
+      <div class="box_color" data-codigo="H089">
+        <span>H089</span>
+      </div>
+      <div class="box_color" data-codigo="K089">
+        <span>K089</span>
+      </div>
+      <div class="box_color" data-codigo="L089">
+        <span>L089</span>
+      </div>
+      <div class="box_color" data-codigo="M089">
+        <span>M089</span>
+      </div>
+      <div class="box_color" data-codigo="N090">
+        <span>N090</span>
+      </div>
+      <div class="box_color" data-codigo="J087">
+        <span>J087</span>
+      </div>
+      <div class="box_color" data-codigo="K087">
+        <span>K087</span>
+      </div>
+      <div class="box_color" data-codigo="N087">
+        <span>N087</span>
+      </div>
+      <div class="box_color" data-codigo="V089">
+        <span>V089</span>
+      </div>
+      <div class="box_color" data-codigo="G090">
+        <span>G090</span>
+      </div>
+      <div class="box_color" data-codigo="L090">
+        <span>L090</span>
+      </div>
+      <div class="box_color" data-codigo="F087">
+        <span>F087</span>
+      </div>
+    </div>
+  </div>
+  <div class="paleta-wrapper" id="tab-amarillos">
+    <div class="paleta" aria-label="Amarillo">
+      <div class="box_color" data-codigo="Y027">
+        <span>Y027</span>
+      </div>
+      <div class="box_color" data-codigo="X027">
+        <span>X027</span>
+      </div>
+      <div class="box_color" data-codigo="V081">
+        <span>V081</span>
+      </div>
+      <div class="box_color" data-codigo="Y115">
+        <span>Y115</span>
+      </div>
+      <div class="box_color" data-codigo="Y113">
+        <span>Y113</span>
+      </div>
+      <div class="box_color" data-codigo="X113">
+        <span>X113</span>
+      </div>
+      <div class="box_color" data-codigo="V081">
+        <span>V081</span>
+      </div>
+      <div class="box_color" data-codigo="S081">
+        <span>S081</span>
+      </div>
+      <div class="box_color" data-codigo="N081">
+        <span>N081</span>
+      </div>
+      <div class="box_color" data-codigo="M081">
+        <span>M081</span>
+      </div>
+      <div class="box_color" data-codigo="L081">
+        <span>L081</span>
+      </div>
+      <div class="box_color" data-codigo="K081">
+        <span>K081</span>
+      </div>
+      <div class="box_color" data-codigo="J081">
+        <span>J081</span>
+      </div>
+      <div class="box_color" data-codigo="H081">
+        <span>H081</span>
+      </div>
+      <div class="box_color" data-codigo="G081">
+        <span>G081</span>
+      </div>
+      <div class="box_color" data-codigo="F081">
+        <span>F081</span>
+      </div>
+      <div class="box_color" data-codigo="V079">
+        <span>V079</span>
+      </div>
+      <div class="box_color" data-codigo="S079">
+        <span>S079</span>
+      </div>
+      <div class="box_color" data-codigo="N079">
+        <span>N079</span>
+      </div>
+      <div class="box_color" data-codigo="M079">
+        <span>M079</span>
+      </div>
+      <div class="box_color" data-codigo="L079">
+        <span>L079</span>
+      </div>
+      <div class="box_color" data-codigo="K079">
+        <span>K079</span>
+      </div>
+      <div class="box_color" data-codigo="J079">
+        <span>J079</span>
+      </div>
+      <div class="box_color" data-codigo="H079">
+        <span>H079</span>
+      </div>
+      <div class="box_color" data-codigo="G079">
+        <span>G079</span>
+      </div>
+      <div class="box_color" data-codigo="F079">
+        <span>F079</span>
+      </div>
+      <div class="box_color" data-codigo="V077">
+        <span>V077</span>
+      </div>
+      <div class="box_color" data-codigo="S077">
+        <span>S077</span>
+      </div>
+      <div class="box_color" data-codigo="N077">
+        <span>N077</span>
+      </div>
+      <div class="box_color" data-codigo="M077">
+        <span>M077</span>
+      </div>
+      <div class="box_color" data-codigo="L077">
+        <span>L077</span>
+      </div>
+      <div class="box_color" data-codigo="K077">
+        <span>K077</span>
+      </div>
+      <div class="box_color" data-codigo="J077">
+        <span>J077</span>
+      </div>
+      <div class="box_color" data-codigo="H077">
+        <span>H077</span>
+      </div>
+      <div class="box_color" data-codigo="G077">
+        <span>G077</span>
+      </div>
+      <div class="box_color" data-codigo="F077">
+        <span>F077</span>
+      </div>
+      <div class="box_color" data-codigo="V072">
+        <span>V072</span>
+      </div>
+      <div class="box_color" data-codigo="S072">
+        <span>S072</span>
+      </div>
+      <div class="box_color" data-codigo="N072">
+        <span>N072</span>
+      </div>
+      <div class="box_color" data-codigo="M072">
+        <span>M072</span>
+      </div>
+      <div class="box_color" data-codigo="L072">
+        <span>L072</span>
+      </div>
+      <div class="box_color" data-codigo="K072">
+        <span>K072</span>
+      </div>
+      <div class="box_color" data-codigo="J072">
+        <span>J072</span>
+      </div>
+      <div class="box_color" data-codigo="H072">
+        <span>H072</span>
+      </div>
+      <div class="box_color" data-codigo="G072">
+        <span>G072</span>
+      </div>
+      <div class="box_color" data-codigo="F072">
+        <span>F072</span>
+      </div>
+    </div>
+  </div>
+  <div class="paleta-wrapper" id="tab-violetas">
+    <div class="paleta" aria-label="Violeta">
+      <div class="box_color" data-codigo="V151">
+        <span>V151</span>
+      </div>
+      <div class="box_color" data-codigo="H148">
+        <span>H148</span>
+      </div>
+      <div class="box_color" data-codigo="J148">
+        <span>J148</span>
+      </div>
+      <div class="box_color" data-codigo="K148">
+        <span>K148</span>
+      </div>
+      <div class="box_color" data-codigo="L148">
+        <span>L148</span>
+      </div>
+      <div class="box_color" data-codigo="M148">
+        <span>M148</span>
+      </div>
+      <div class="box_color" data-codigo="N148">
+        <span>N148</span>
+      </div>
+      <div class="box_color" data-codigo="S148">
+        <span>S148</span>
+      </div>
+      <div class="box_color" data-codigo="V148">
+        <span>V148</span>
+      </div>
+      <div class="box_color" data-codigo="F149">
+        <span>F149</span>
+      </div>
+      <div class="box_color" data-codigo="G149">
+        <span>G149</span>
+      </div>
+      <div class="box_color" data-codigo="H149">
+        <span>H149</span>
+      </div>
+      <div class="box_color" data-codigo="J149">
+        <span>J149</span>
+      </div>
+      <div class="box_color" data-codigo="K149">
+        <span>K149</span>
+      </div>
+      <div class="box_color" data-codigo="L149">
+        <span>L149</span>
+      </div>
+      <div class="box_color" data-codigo="M149">
+        <span>M149</span>
+      </div>
+      <div class="box_color" data-codigo="N149">
+        <span>N149</span>
+      </div>
+      <div class="box_color" data-codigo="S149">
+        <span>S149</span>
+      </div>
+      <div class="box_color" data-codigo="V149">
+        <span>V149</span>
+      </div>
+      <div class="box_color" data-codigo="F151">
+        <span>F151</span>
+      </div>
+      <div class="box_color" data-codigo="G151">
+        <span>G151</span>
+      </div>
+      <div class="box_color" data-codigo="H151">
+        <span>H151</span>
+      </div>
+      <div class="box_color" data-codigo="J151">
+        <span>J151</span>
+      </div>
+      <div class="box_color" data-codigo="K151">
+        <span>K151</span>
+      </div>
+      <div class="box_color" data-codigo="L151">
+        <span>L151</span>
+      </div>
+      <div class="box_color" data-codigo="M151">
+        <span>M151</span>
+      </div>
+      <div class="box_color" data-codigo="N151">
+        <span>N151</span>
+      </div>
+      <div class="box_color" data-codigo="S151">
+        <span>S151</span>
+      </div>
+      <div class="box_color" data-codigo="H148">
+        <span>H148</span>
+      </div>
+      <div class="box_color" data-codigo="J148">
+        <span>J148</span>
+      </div>
+      <div class="box_color" data-codigo="K148">
+        <span>K148</span>
+      </div>
+      <div class="box_color" data-codigo="L148">
+        <span>L148</span>
+      </div>
+      <div class="box_color" data-codigo="M148">
+        <span>M148</span>
+      </div>
+      <div class="box_color" data-codigo="N148">
+        <span>N148</span>
+      </div>
+      <div class="box_color" data-codigo="S148">
+        <span>S148</span>
+      </div>
+      <div class="box_color" data-codigo="V148">
+        <span>V148</span>
+      </div>
+      <div class="box_color" data-codigo="F149">
+        <span>F149</span>
+      </div>
+      <div class="box_color" data-codigo="G149">
+        <span>G149</span>
+      </div>
+      <div class="box_color" data-codigo="H149">
+        <span>H149</span>
+      </div>
+      <div class="box_color" data-codigo="J149">
+        <span>J149</span>
+      </div>
+      <div class="box_color" data-codigo="K149">
+        <span>K149</span>
+      </div>
+      <div class="box_color" data-codigo="L149">
+        <span>L149</span>
+      </div>
+      <div class="box_color" data-codigo="M149">
+        <span>M149</span>
+      </div>
+      <div class="box_color" data-codigo="N149">
+        <span>N149</span>
+      </div>
+      <div class="box_color" data-codigo="S149">
+        <span>S149</span>
+      </div>
+      <div class="box_color" data-codigo="V149">
+        <span>V149</span>
+      </div>
+      <div class="box_color" data-codigo="F151">
+        <span>F151</span>
+      </div>
+      <div class="box_color" data-codigo="H148">
+        <span>H148</span>
+      </div>
+      <div class="box_color" data-codigo="J148">
+        <span>J148</span>
+      </div>
+      <div class="box_color" data-codigo="K148">
+        <span>K148</span>
+      </div>
+      <div class="box_color" data-codigo="L148">
+        <span>L148</span>
+      </div>
+      <div class="box_color" data-codigo="M148">
+        <span>M148</span>
+      </div>
+      <div class="box_color" data-codigo="N148">
+        <span>N148</span>
+      </div>
+      <div class="box_color" data-codigo="S148">
+        <span>S148</span>
+      </div>
+      <div class="box_color" data-codigo="V148">
+        <span>V148</span>
+      </div>
+      <div class="box_color" data-codigo="F149">
+        <span>F149</span>
+      </div>
+      <div class="box_color" data-codigo="G149">
+        <span>G149</span>
+      </div>
+      <div class="box_color" data-codigo="H149">
+        <span>H149</span>
+      </div>
+      <div class="box_color" data-codigo="J149">
+        <span>J149</span>
+      </div>
+      <div class="box_color" data-codigo="K149">
+        <span>K149</span>
+      </div>
+      <div class="box_color" data-codigo="L149">
+        <span>L149</span>
+      </div>
+      <div class="box_color" data-codigo="M149">
+        <span>M149</span>
+      </div>
+      <div class="box_color" data-codigo="N149">
+        <span>N149</span>
+      </div>
+      <div class="box_color" data-codigo="S149">
+        <span>S149</span>
+      </div>
+      <div class="box_color" data-codigo="V149">
+        <span>V149</span>
+      </div>
+      <div class="box_color" data-codigo="F151">
+        <span>F151</span>
+      </div>
+      <div class="box_color" data-codigo="V145">
+        <span>V145</span>
+      </div>
+      <div class="box_color" data-codigo="F148">
+        <span>F148</span>
+      </div>
+      <div class="box_color" data-codigo="G148">
+        <span>G148</span>
+      </div>
+      <div class="box_color" data-codigo="S145">
+        <span>S145</span>
+      </div>
+      <div class="box_color" data-codigo="N145">
+        <span>N145</span>
+      </div>
+      <div class="box_color" data-codigo="M145">
+        <span>M145</span>
+      </div>
+      <div class="box_color" data-codigo="L145">
+        <span>L145</span>
+      </div>
+      <div class="box_color" data-codigo="K145">
+        <span>K145</span>
+      </div>
+      <div class="box_color" data-codigo="J145">
+        <span>J145</span>
+      </div>
+      <div class="box_color" data-codigo="H145">
+        <span>H145</span>
+      </div>
+      <div class="box_color" data-codigo="G145">
+        <span>G145</span>
+      </div>
+      <div class="box_color" data-codigo="F145">
+        <span>F145</span>
+      </div>
+      <div class="box_color" data-codigo="S143">
+        <span>S143</span>
+      </div>
+      <div class="box_color" data-codigo="N143">
+        <span>N143</span>
+      </div>
+      <div class="box_color" data-codigo="M143">
+        <span>M143</span>
+      </div>
+      <div class="box_color" data-codigo="L143">
+        <span>L143</span>
+      </div>
+      <div class="box_color" data-codigo="K143">
+        <span>K143</span>
+      </div>
+      <div class="box_color" data-codigo="J143">
+        <span>J143</span>
+      </div>
+      <div class="box_color" data-codigo="J143">
+        <span>J143</span>
+      </div>
+      <div class="box_color" data-codigo="H143">
+        <span>H143</span>
+      </div>
+      <div class="box_color" data-codigo="G143">
+        <span>G143</span>
+      </div>
+      <div class="box_color" data-codigo="F143">
+        <span>F143</span>
+      </div>
+      <div class="box_color" data-codigo="V141">
+        <span>V141</span>
+      </div>
+      <div class="box_color" data-codigo="S141">
+        <span>S141</span>
+      </div>
+      <div class="box_color" data-codigo="N141">
+        <span>N141</span>
+      </div>
+      <div class="box_color" data-codigo="M141">
+        <span>M141</span>
+      </div>
+      <div class="box_color" data-codigo="L141">
+        <span>L141</span>
+      </div>
+      <div class="box_color" data-codigo="K141">
+        <span>K141</span>
+      </div>
+      <div class="box_color" data-codigo="J141">
+        <span>J141</span>
+      </div>
+      <div class="box_color" data-codigo="H141">
+        <span>H141</span>
+      </div>
+      <div class="box_color" data-codigo="G141">
+        <span>G141</span>
+      </div>
+      <div class="box_color" data-codigo="F141">
+        <span>F141</span>
+      </div>
+    </div>
+  </div>
+  <div class="paleta-wrapper" id="tab-verdes">
+    <div class="paleta" aria-label="Verde">
+      <div class="box_color" data-codigo="Y167">
+        <span>Y167</span>
+      </div>
+      <div class="box_color" data-codigo="X167">
+        <span>X167</span>
+      </div>
+      <div class="box_color" data-codigo="Y151">
+        <span>Y151</span>
+      </div>
+      <div class="box_color" data-codigo="X151">
+        <span>X151</span>
+      </div>
+      <div class="box_color" data-codigo="Y149">
+        <span>Y149</span>
+      </div>
+      <div class="box_color" data-codigo="X149">
+        <span>X149</span>
+      </div>
+      <div class="box_color" data-codigo="Y148">
+        <span>Y148</span>
+      </div>
+      <div class="box_color" data-codigo="X148">
+        <span>X148</span>
+      </div>
+      <div class="box_color" data-codigo="Y145">
+        <span>Y145</span>
+      </div>
+      <div class="box_color" data-codigo="X145">
+        <span>X145</span>
+      </div>
+      <div class="box_color" data-codigo="Y139">
+        <span>Y139</span>
+      </div>
+      <div class="box_color" data-codigo="X139">
+        <span>X139</span>
+      </div>
+      <div class="box_color" data-codigo="Y122">
+        <span>Y122</span>
+      </div>
+      <div class="box_color" data-codigo="Y120">
+        <span>Y120</span>
+      </div>
+      <div class="box_color" data-codigo="Y109">
+        <span>Y109</span>
+      </div>
+      <div class="box_color" data-codigo="X109">
+        <span>X109</span>
+      </div>
+      <div class="box_color" data-codigo="Y087">
+        <span>Y087</span>
+      </div>
+      <div class="box_color" data-codigo="X087">
+        <span>X087</span>
+      </div>
+      <div class="box_color" data-codigo="Y081">
+        <span>Y081</span>
+      </div>
+      <div class="box_color" data-codigo="X081">
+        <span>X081</span>
+      </div>
+      <div class="box_color" data-codigo="V071">
+        <span>V071</span>
+      </div>
+      <div class="box_color" data-codigo="S071">
+        <span>S071</span>
+      </div>
+      <div class="box_color" data-codigo="N071">
+        <span>N071</span>
+      </div>
+      <div class="box_color" data-codigo="M071">
+        <span>M071</span>
+      </div>
+      <div class="box_color" data-codigo="L071">
+        <span>L071</span>
+      </div>
+      <div class="box_color" data-codigo="K071">
+        <span>K071</span>
+      </div>
+      <div class="box_color" data-codigo="J071">
+        <span>J071</span>
+      </div>
+      <div class="box_color" data-codigo="H071">
+        <span>H071</span>
+      </div>
+      <div class="box_color" data-codigo="G071">
+        <span>G071</span>
+      </div>
+      <div class="box_color" data-codigo="F071">
+        <span>F071</span>
+      </div>
+      <div class="box_color" data-codigo="V060">
+        <span>V060</span>
+      </div>
+      <div class="box_color" data-codigo="S060">
+        <span>S060</span>
+      </div>
+      <div class="box_color" data-codigo="N060">
+        <span>N060</span>
+      </div>
+      <div class="box_color" data-codigo="M060">
+        <span>M060</span>
+      </div>
+      <div class="box_color" data-codigo="L060">
+        <span>L060</span>
+      </div>
+      <div class="box_color" data-codigo="K060">
+        <span>K060</span>
+      </div>
+      <div class="box_color" data-codigo="J060">
+        <span>J060</span>
+      </div>
+      <div class="box_color" data-codigo="H060">
+        <span>H060</span>
+      </div>
+      <div class="box_color" data-codigo="G060">
+        <span>G060</span>
+      </div>
+      <div class="box_color" data-codigo="F060">
+        <span>F060</span>
+      </div>
+      <div class="box_color" data-codigo="V058">
+        <span>V058</span>
+      </div>
+      <div class="box_color" data-codigo="S058">
+        <span>S058</span>
+      </div>
+      <div class="box_color" data-codigo="N058">
+        <span>N058</span>
+      </div>
+      <div class="box_color" data-codigo="M058">
+        <span>M058</span>
+      </div>
+      <div class="box_color" data-codigo="L058">
+        <span>L058</span>
+      </div>
+      <div class="box_color" data-codigo="K058">
+        <span>K058</span>
+      </div>
+      <div class="box_color" data-codigo="J058">
+        <span>J058</span>
+      </div>
+      <div class="box_color" data-codigo="H058">
+        <span>H058</span>
+      </div>
+      <div class="box_color" data-codigo="G058">
+        <span>G058</span>
+      </div>
+      <div class="box_color" data-codigo="F058">
+        <span>F058</span>
+      </div>
+      <div class="box_color" data-codigo="V052">
+        <span>V052</span>
+      </div>
+      <div class="box_color" data-codigo="S052">
+        <span>S052</span>
+      </div>
+      <div class="box_color" data-codigo="N052">
+        <span>N052</span>
+      </div>
+      <div class="box_color" data-codigo="M052">
+        <span>M052</span>
+      </div>
+      <div class="box_color" data-codigo="L052">
+        <span>L052</span>
+      </div>
+      <div class="box_color" data-codigo="K052">
+        <span>K052</span>
+      </div>
+      <div class="box_color" data-codigo="J052">
+        <span>J052</span>
+      </div>
+      <div class="box_color" data-codigo="H052">
+        <span>H052</span>
+      </div>
+      <div class="box_color" data-codigo="G052">
+        <span>G052</span>
+      </div>
+      <div class="box_color" data-codigo="F052">
+        <span>F052</span>
+      </div>
+      <div class="box_color" data-codigo="V050">
+        <span>V050</span>
+      </div>
+      <div class="box_color" data-codigo="S050">
+        <span>S050</span>
+      </div>
+      <div class="box_color" data-codigo="N050">
+        <span>N050</span>
+      </div>
+      <div class="box_color" data-codigo="M050">
+        <span>M050</span>
+      </div>
+      <div class="box_color" data-codigo="L050">
+        <span>L050</span>
+      </div>
+      <div class="box_color" data-codigo="K050">
+        <span>K050</span>
+      </div>
+      <div class="box_color" data-codigo="J050">
+        <span>J050</span>
+      </div>
+      <div class="box_color" data-codigo="H050">
+        <span>H050</span>
+      </div>
+      <div class="box_color" data-codigo="G050">
+        <span>G050</span>
+      </div>
+      <div class="box_color" data-codigo="F050">
+        <span>F050</span>
+      </div>
+      <div class="box_color" data-codigo="V048">
+        <span>V048</span>
+      </div>
+      <div class="box_color" data-codigo="S048">
+        <span>S048</span>
+      </div>
+      <div class="box_color" data-codigo="N048">
+        <span>N048</span>
+      </div>
+      <div class="box_color" data-codigo="M048">
+        <span>M048</span>
+      </div>
+      <div class="box_color" data-codigo="L048">
+        <span>L048</span>
+      </div>
+      <div class="box_color" data-codigo="K048">
+        <span>K048</span>
+      </div>
+      <div class="box_color" data-codigo="J048">
+        <span>J048</span>
+      </div>
+      <div class="box_color" data-codigo="H048">
+        <span>H048</span>
+      </div>
+      <div class="box_color" data-codigo="G048">
+        <span>G048</span>
+      </div>
+      <div class="box_color" data-codigo="F048">
+        <span>F048</span>
+      </div>
+      <div class="box_color" data-codigo="V044">
+        <span>V044</span>
+      </div>
+      <div class="box_color" data-codigo="S044">
+        <span>S044</span>
+      </div>
+      <div class="box_color" data-codigo="N044">
+        <span>N044</span>
+      </div>
+      <div class="box_color" data-codigo="M044">
+        <span>M044</span>
+      </div>
+      <div class="box_color" data-codigo="L044">
+        <span>L044</span>
+      </div>
+      <div class="box_color" data-codigo="K044">
+        <span>K044</span>
+      </div>
+      <div class="box_color" data-codigo="J044">
+        <span>J044</span>
+      </div>
+      <div class="box_color" data-codigo="H044">
+        <span>H044</span>
+      </div>
+      <div class="box_color" data-codigo="G044">
+        <span>G044</span>
+      </div>
+      <div class="box_color" data-codigo="F044">
+        <span>F044</span>
+      </div>
+      <div class="box_color" data-codigo="V043">
+        <span>V043</span>
+      </div>
+      <div class="box_color" data-codigo="S043">
+        <span>S043</span>
+      </div>
+      <div class="box_color" data-codigo="N043">
+        <span>N043</span>
+      </div>
+      <div class="box_color" data-codigo="M043">
+        <span>M043</span>
+      </div>
+      <div class="box_color" data-codigo="L043">
+        <span>L043</span>
+      </div>
+      <div class="box_color" data-codigo="K043">
+        <span>K043</span>
+      </div>
+      <div class="box_color" data-codigo="J043">
+        <span>J043</span>
+      </div>
+      <div class="box_color" data-codigo="H043">
+        <span>H043</span>
+      </div>
+      <div class="box_color" data-codigo="F043">
+        <span>F043</span>
+      </div>
+      <div class="box_color" data-codigo="V039">
+        <span>V039</span>
+      </div>
+      <div class="box_color" data-codigo="S039">
+        <span>S039</span>
+      </div>
+      <div class="box_color" data-codigo="N039">
+        <span>N039</span>
+      </div>
+      <div class="box_color" data-codigo="M039">
+        <span>M039</span>
+      </div>
+      <div class="box_color" data-codigo="L039">
+        <span>L039</span>
+      </div>
+      <div class="box_color" data-codigo="L038">
+        <span>L038</span>
+      </div>
+      <div class="box_color" data-codigo="M038">
+        <span>M038</span>
+      </div>
+      <div class="box_color" data-codigo="N038">
+        <span>N038</span>
+      </div>
+      <div class="box_color" data-codigo="S038">
+        <span>S038</span>
+      </div>
+      <div class="box_color" data-codigo="V038">
+        <span>V038</span>
+      </div>
+      <div class="box_color" data-codigo="F039">
+        <span>F039</span>
+      </div>
+      <div class="box_color" data-codigo="G039">
+        <span>G039</span>
+      </div>
+      <div class="box_color" data-codigo="H039">
+        <span>H039</span>
+      </div>
+      <div class="box_color" data-codigo="J039">
+        <span>J039</span>
+      </div>
+      <div class="box_color" data-codigo="K039">
+        <span>K039</span>
+      </div>
+      <div class="box_color" data-codigo="V033">
+        <span>V033</span>
+      </div>
+      <div class="box_color" data-codigo="F037">
+        <span>F037</span>
+      </div>
+      <div class="box_color" data-codigo="G037">
+        <span>G037</span>
+      </div>
+      <div class="box_color" data-codigo="H037">
+        <span>H037</span>
+      </div>
+      <div class="box_color" data-codigo="J037">
+        <span>J037</span>
+      </div>
+      <div class="box_color" data-codigo="K037">
+        <span>K037</span>
+      </div>
+      <div class="box_color" data-codigo="L037">
+        <span>L037</span>
+      </div>
+      <div class="box_color" data-codigo="M037">
+        <span>M037</span>
+      </div>
+      <div class="box_color" data-codigo="N037">
+        <span>N037</span>
+      </div>
+      <div class="box_color" data-codigo="S037">
+        <span>S037</span>
+      </div>
+      <div class="box_color" data-codigo="V037">
+        <span>V037</span>
+      </div>
+      <div class="box_color" data-codigo="F038">
+        <span>F038</span>
+      </div>
+      <div class="box_color" data-codigo="G038">
+        <span>G038</span>
+      </div>
+      <div class="box_color" data-codigo="H038">
+        <span>H038</span>
+      </div>
+      <div class="box_color" data-codigo="J038">
+        <span>J038</span>
+      </div>
+      <div class="box_color" data-codigo="K038">
+        <span>K038</span>
+      </div>
+      <div class="box_color" data-codigo="S033">
+        <span>S033</span>
+      </div>
+      <div class="box_color" data-codigo="N033">
+        <span>N033</span>
+      </div>
+      <div class="box_color" data-codigo="M033">
+        <span>M033</span>
+      </div>
+      <div class="box_color" data-codigo="L033">
+        <span>L033</span>
+      </div>
+      <div class="box_color" data-codigo="K033">
+        <span>K033</span>
+      </div>
+      <div class="box_color" data-codigo="J033">
+        <span>J033</span>
+      </div>
+      <div class="box_color" data-codigo="H033">
+        <span>H033</span>
+      </div>
+      <div class="box_color" data-codigo="G033">
+        <span>G033</span>
+      </div>
+      <div class="box_color" data-codigo="F033">
+        <span>F033</span>
+      </div>
+      <div class="box_color" data-codigo="V032">
+        <span>V032</span>
+      </div>
+      <div class="box_color" data-codigo="S032">
+        <span>S032</span>
+      </div>
+      <div class="box_color" data-codigo="N032">
+        <span>N032</span>
+      </div>
+      <div class="box_color" data-codigo="M032">
+        <span>M032</span>
+      </div>
+      <div class="box_color" data-codigo="L032">
+        <span>L032</span>
+      </div>
+      <div class="box_color" data-codigo="K032">
+        <span>K032</span>
+      </div>
+      <div class="box_color" data-codigo="J032">
+        <span>J032</span>
+      </div>
+      <div class="box_color" data-codigo="H032">
+        <span>H032</span>
+      </div>
+      <div class="box_color" data-codigo="G032">
+        <span>G032</span>
+      </div>
+      <div class="box_color" data-codigo="F032">
+        <span>F032</span>
+      </div>
+      <div class="box_color" data-codigo="V031">
+        <span>V031</span>
+      </div>
+      <div class="box_color" data-codigo="S031">
+        <span>S031</span>
+      </div>
+      <div class="box_color" data-codigo="N031">
+        <span>N031</span>
+      </div>
+      <div class="box_color" data-codigo="M031">
+        <span>M031</span>
+      </div>
+      <div class="box_color" data-codigo="L031">
+        <span>L031</span>
+      </div>
+      <div class="box_color" data-codigo="K031">
+        <span>K031</span>
+      </div>
+      <div class="box_color" data-codigo="J031">
+        <span>J031</span>
+      </div>
+      <div class="box_color" data-codigo="H031">
+        <span>H031</span>
+      </div>
+      <div class="box_color" data-codigo="G031">
+        <span>G031</span>
+      </div>
+      <div class="box_color" data-codigo="F031">
+        <span>F031</span>
+      </div>
+    </div>
+  </div>
+  <div class="paleta-wrapper" id="tab-azules">
+    <div class="paleta" aria-label="Azul">
+      <div class="box_color" data-codigo="X168">
+        <span>X168</span>
+      </div>
+      <div class="box_color" data-codigo="Y168">
+        <span>Y168</span>
+      </div>
+      <div class="box_color" data-codigo="Y157">
+        <span>Y157</span>
+      </div>
+      <div class="box_color" data-codigo="X157">
+        <span>X157</span>
+      </div>
+      <div class="box_color" data-codigo="Y143">
+        <span>Y143</span>
+      </div>
+      <div class="box_color" data-codigo="X143">
+        <span>X143</span>
+      </div>
+      <div class="box_color" data-codigo="Y138">
+        <span>Y138</span>
+      </div>
+      <div class="box_color" data-codigo="X138">
+        <span>X138</span>
+      </div>
+      <div class="box_color" data-codigo="Y137">
+        <span>Y137</span>
+      </div>
+      <div class="box_color" data-codigo="X137">
+        <span>X137</span>
+      </div>
+      <div class="box_color" data-codigo="Y079">
+        <span>Y079</span>
+      </div>
+      <div class="box_color" data-codigo="X079">
+        <span>X079</span>
+      </div>
+      <div class="box_color" data-codigo="Y077">
+        <span>Y077</span>
+      </div>
+      <div class="box_color" data-codigo="V030">
+        <span>V030</span>
+      </div>
+      <div class="box_color" data-codigo="K030">
+        <span>K030</span>
+      </div>
+      <div class="box_color" data-codigo="S030">
+        <span>S030</span>
+      </div>
+      <div class="box_color" data-codigo="N030">
+        <span>N030</span>
+      </div>
+      <div class="box_color" data-codigo="M030">
+        <span>M030</span>
+      </div>
+      <div class="box_color" data-codigo="L030">
+        <span>L030</span>
+      </div>
+      <div class="box_color" data-codigo="J030">
+        <span>J030</span>
+      </div>
+      <div class="box_color" data-codigo="H030">
+        <span>H030</span>
+      </div>
+      <div class="box_color" data-codigo="G030">
+        <span>G030</span>
+      </div>
+      <div class="box_color" data-codigo="F030">
+        <span>F030</span>
+      </div>
+      <div class="box_color" data-codigo="V029">
+        <span>V029</span>
+      </div>
+      <div class="box_color" data-codigo="S029">
+        <span>S029</span>
+      </div>
+      <div class="box_color" data-codigo="N029">
+        <span>N029</span>
+      </div>
+      <div class="box_color" data-codigo="M029">
+        <span>M029</span>
+      </div>
+      <div class="box_color" data-codigo="L029">
+        <span>L029</span>
+      </div>
+      <div class="box_color" data-codigo="K029">
+        <span>K029</span>
+      </div>
+      <div class="box_color" data-codigo="J029">
+        <span>J029</span>
+      </div>
+      <div class="box_color" data-codigo="H029">
+        <span>H029</span>
+      </div>
+      <div class="box_color" data-codigo="G029">
+        <span>G029</span>
+      </div>
+      <div class="box_color" data-codigo="F029">
+        <span>F029</span>
+      </div>
+      <div class="box_color" data-codigo="V027">
+        <span>V027</span>
+      </div>
+      <div class="box_color" data-codigo="S027">
+        <span>S027</span>
+      </div>
+      <div class="box_color" data-codigo="N027">
+        <span>N027</span>
+      </div>
+      <div class="box_color" data-codigo="M027">
+        <span>M027</span>
+      </div>
+      <div class="box_color" data-codigo="L027">
+        <span>L027</span>
+      </div>
+      <div class="box_color" data-codigo="K027">
+        <span>K027</span>
+      </div>
+      <div class="box_color" data-codigo="J027">
+        <span>J027</span>
+      </div>
+      <div class="box_color" data-codigo="H027">
+        <span>H027</span>
+      </div>
+      <div class="box_color" data-codigo="G027">
+        <span>G027</span>
+      </div>
+      <div class="box_color" data-codigo="F027">
+        <span>F027</span>
+      </div>
+      <div class="box_color" data-codigo="V021">
+        <span>V021</span>
+      </div>
+      <div class="box_color" data-codigo="S021">
+        <span>S021</span>
+      </div>
+      <div class="box_color" data-codigo="N021">
+        <span>N021</span>
+      </div>
+      <div class="box_color" data-codigo="M021">
+        <span>M021</span>
+      </div>
+      <div class="box_color" data-codigo="L021">
+        <span>L021</span>
+      </div>
+      <div class="box_color" data-codigo="K021">
+        <span>K021</span>
+      </div>
+      <div class="box_color" data-codigo="J021">
+        <span>J021</span>
+      </div>
+      <div class="box_color" data-codigo="H021">
+        <span>H021</span>
+      </div>
+      <div class="box_color" data-codigo="G021">
+        <span>G021</span>
+      </div>
+      <div class="box_color" data-codigo="F021">
+        <span>F021</span>
+      </div>
+      <div class="box_color" data-codigo="V018">
+        <span>V018</span>
+      </div>
+      <div class="box_color" data-codigo="S018">
+        <span>S018</span>
+      </div>
+      <div class="box_color" data-codigo="L018">
+        <span>L018</span>
+      </div>
+      <div class="box_color" data-codigo="N018">
+        <span>N018</span>
+      </div>
+      <div class="box_color" data-codigo="M018">
+        <span>M018</span>
+      </div>
+      <div class="box_color" data-codigo="K018">
+        <span>K018</span>
+      </div>
+      <div class="box_color" data-codigo="J018">
+        <span>J018</span>
+      </div>
+      <div class="box_color" data-codigo="H018">
+        <span>H018</span>
+      </div>
+      <div class="box_color" data-codigo="G018">
+        <span>G018</span>
+      </div>
+      <div class="box_color" data-codigo="F018">
+        <span>F018</span>
+      </div>
+      <div class="box_color" data-codigo="V017">
+        <span>V017</span>
+      </div>
+      <div class="box_color" data-codigo="S017">
+        <span>S017</span>
+      </div>
+      <div class="box_color" data-codigo="N017">
+        <span>N017</span>
+      </div>
+      <div class="box_color" data-codigo="M017">
+        <span>M017</span>
+      </div>
+      <div class="box_color" data-codigo="L017">
+        <span>L017</span>
+      </div>
+      <div class="box_color" data-codigo="K017">
+        <span>K017</span>
+      </div>
+      <div class="box_color" data-codigo="J017">
+        <span>J017</span>
+      </div>
+      <div class="box_color" data-codigo="H017">
+        <span>H017</span>
+      </div>
+      <div class="box_color" data-codigo="G017">
+        <span>G017</span>
+      </div>
+      <div class="box_color" data-codigo="F017">
+        <span>F017</span>
+      </div>
+      <div class="box_color" data-codigo="V016">
+        <span>V016</span>
+      </div>
+      <div class="box_color" data-codigo="S016">
+        <span>S016</span>
+      </div>
+      <div class="box_color" data-codigo="N016">
+        <span>N016</span>
+      </div>
+      <div class="box_color" data-codigo="MA16">
+        <span>MA16</span>
+      </div>
+      <div class="box_color" data-codigo="L016">
+        <span>L016</span>
+      </div>
+      <div class="box_color" data-codigo="K016">
+        <span>K016</span>
+      </div>
+      <div class="box_color" data-codigo="J016">
+        <span>J016</span>
+      </div>
+      <div class="box_color" data-codigo="H016">
+        <span>H016</span>
+      </div>
+      <div class="box_color" data-codigo="G016">
+        <span>G016</span>
+      </div>
+      <div class="box_color" data-codigo="F016">
+        <span>F016</span>
+      </div>
+    </div>
+  </div>
+  <div class="paleta-wrapper" id="tab-marrones">
+    <div class="paleta" aria-label="Marrón">
+      <div class="box_color" data-codigo="Y140">
+        <span>Y140</span>
+      </div>
+      <div class="box_color" data-codigo="X140">
+        <span>X140</span>
+      </div>
+      <div class="box_color" data-codigo="Y136">
+        <span>Y136</span>
+      </div>
+      <div class="box_color" data-codigo="X136">
+        <span>X136</span>
+      </div>
+      <div class="box_color" data-codigo="Y135">
+        <span>Y135</span>
+      </div>
+      <div class="box_color" data-codigo="X135">
+        <span>X135</span>
+      </div>
+      <div class="box_color" data-codigo="Y134">
+        <span>Y134</span>
+      </div>
+      <div class="box_color" data-codigo="X134">
+        <span>X134</span>
+      </div>
+      <div class="box_color" data-codigo="Y130">
+        <span>Y130</span>
+      </div>
+      <div class="box_color" data-codigo="X130">
+        <span>X130</span>
+      </div>
+      <div class="box_color" data-codigo="Y129">
+        <span>Y129</span>
+      </div>
+      <div class="box_color" data-codigo="X129">
+        <span>X129</span>
+      </div>
+      <div class="box_color" data-codigo="Y095">
+        <span>Y095</span>
+      </div>
+      <div class="box_color" data-codigo="X095">
+        <span>X095</span>
+      </div>
+      <div class="box_color" data-codigo="Y089">
+        <span>Y089</span>
+      </div>
+      <div class="box_color" data-codigo="X089">
+        <span>X089</span>
+      </div>
+      <div class="box_color" data-codigo="Y071">
+        <span>Y071</span>
+      </div>
+      <div class="box_color" data-codigo="X071">
+        <span>X071</span>
+      </div>
+      <div class="box_color" data-codigo="Y048">
+        <span>Y048</span>
+      </div>
+      <div class="box_color" data-codigo="X048">
+        <span>X048</span>
+      </div>
+      <div class="box_color" data-codigo="Y044">
+        <span>Y044</span>
+      </div>
+      <div class="box_color" data-codigo="X044">
+        <span>X044</span>
+      </div>
+      <div class="box_color" data-codigo="Y043">
+        <span>Y043</span>
+      </div>
+      <div class="box_color" data-codigo="X043">
+        <span>X043</span>
+      </div>
+      <div class="box_color" data-codigo="Y039">
+        <span>Y039</span>
+      </div>
+      <div class="box_color" data-codigo="Y038">
+        <span>Y038</span>
+      </div>
+      <div class="box_color" data-codigo="X038">
+        <span>X038</span>
+      </div>
+      <div class="box_color" data-codigo="Y037">
+        <span>Y037</span>
+      </div>
+      <div class="box_color" data-codigo="X037">
+        <span>X037</span>
+      </div>
+      <div class="box_color" data-codigo="Y033">
+        <span>Y033</span>
+      </div>
+      <div class="box_color" data-codigo="X033">
+        <span>X033</span>
+      </div>
+      <div class="box_color" data-codigo="Y032">
+        <span>Y032</span>
+      </div>
+      <div class="box_color" data-codigo="X032">
+        <span>X032</span>
+      </div>
+      <div class="box_color" data-codigo="Y031">
+        <span>Y031</span>
+      </div>
+      <div class="box_color" data-codigo="X031">
+        <span>X031</span>
+      </div>
+      <div class="box_color" data-codigo="Y030">
+        <span>Y030</span>
+      </div>
+      <div class="box_color" data-codigo="X030">
+        <span>X030</span>
+      </div>
+      <div class="box_color" data-codigo="Y029">
+        <span>Y029</span>
+      </div>
+      <div class="box_color" data-codigo="X029">
+        <span>X029</span>
+      </div>
+      <div class="box_color" data-codigo="V122">
+        <span>V122</span>
+      </div>
+      <div class="box_color" data-codigo="S122">
+        <span>S122</span>
+      </div>
+      <div class="box_color" data-codigo="N122">
+        <span>N122</span>
+      </div>
+      <div class="box_color" data-codigo="M122">
+        <span>M122</span>
+      </div>
+      <div class="box_color" data-codigo="L122">
+        <span>L122</span>
+      </div>
+      <div class="box_color" data-codigo="K122">
+        <span>K122</span>
+      </div>
+      <div class="box_color" data-codigo="J122">
+        <span>J122</span>
+      </div>
+      <div class="box_color" data-codigo="H122">
+        <span>H122</span>
+      </div>
+      <div class="box_color" data-codigo="G122">
+        <span>G122</span>
+      </div>
+      <div class="box_color" data-codigo="F122">
+        <span>F122</span>
+      </div>
+      <div class="box_color" data-codigo="V120">
+        <span>V120</span>
+      </div>
+      <div class="box_color" data-codigo="S120">
+        <span>S120</span>
+      </div>
+      <div class="box_color" data-codigo="N120">
+        <span>N120</span>
+      </div>
+      <div class="box_color" data-codigo="M120">
+        <span>M120</span>
+      </div>
+      <div class="box_color" data-codigo="L120">
+        <span>L120</span>
+      </div>
+      <div class="box_color" data-codigo="K120">
+        <span>K120</span>
+      </div>
+      <div class="box_color" data-codigo="J120">
+        <span>J120</span>
+      </div>
+      <div class="box_color" data-codigo="H120">
+        <span>H120</span>
+      </div>
+      <div class="box_color" data-codigo="G120">
+        <span>G120</span>
+      </div>
+      <div class="box_color" data-codigo="F120">
+        <span>F120</span>
+      </div>
+      <div class="box_color" data-codigo="V115">
+        <span>V115</span>
+      </div>
+      <div class="box_color" data-codigo="S115">
+        <span>S115</span>
+      </div>
+      <div class="box_color" data-codigo="N115">
+        <span>N115</span>
+      </div>
+      <div class="box_color" data-codigo="M115">
+        <span>M115</span>
+      </div>
+      <div class="box_color" data-codigo="L115">
+        <span>L115</span>
+      </div>
+      <div class="box_color" data-codigo="K115">
+        <span>K115</span>
+      </div>
+      <div class="box_color" data-codigo="J115">
+        <span>J115</span>
+      </div>
+      <div class="box_color" data-codigo="H115">
+        <span>H115</span>
+      </div>
+      <div class="box_color" data-codigo="G115">
+        <span>G115</span>
+      </div>
+      <div class="box_color" data-codigo="F115">
+        <span>F115</span>
+      </div>
+      <div class="box_color" data-codigo="V113">
+        <span>V113</span>
+      </div>
+      <div class="box_color" data-codigo="S113">
+        <span>S113</span>
+      </div>
+      <div class="box_color" data-codigo="N113">
+        <span>N113</span>
+      </div>
+      <div class="box_color" data-codigo="M113">
+        <span>M113</span>
+      </div>
+      <div class="box_color" data-codigo="L113">
+        <span>L113</span>
+      </div>
+      <div class="box_color" data-codigo="K113">
+        <span>K113</span>
+      </div>
+      <div class="box_color" data-codigo="J113">
+        <span>J113</span>
+      </div>
+      <div class="box_color" data-codigo="H113">
+        <span>H113</span>
+      </div>
+      <div class="box_color" data-codigo="G113">
+        <span>G113</span>
+      </div>
+      <div class="box_color" data-codigo="F113">
+        <span>F113</span>
+      </div>
+      <div class="box_color" data-codigo="V109">
+        <span>V109</span>
+      </div>
+      <div class="box_color" data-codigo="S109">
+        <span>S109</span>
+      </div>
+      <div class="box_color" data-codigo="N109">
+        <span>N109</span>
+      </div>
+      <div class="box_color" data-codigo="L109">
+        <span>L109</span>
+      </div>
+      <div class="box_color" data-codigo="K109">
+        <span>K109</span>
+      </div>
+      <div class="box_color" data-codigo="J109">
+        <span>J109</span>
+      </div>
+      <div class="box_color" data-codigo="H109">
+        <span>H109</span>
+      </div>
+      <div class="box_color" data-codigo="M109">
+        <span>M109</span>
+      </div>
+      <div class="box_color" data-codigo="V100">
+        <span>V100</span>
+      </div>
+      <div class="box_color" data-codigo="F101">
+        <span>F101</span>
+      </div>
+      <div class="box_color" data-codigo="G101">
+        <span>G101</span>
+      </div>
+      <div class="box_color" data-codigo="H101">
+        <span>H101</span>
+      </div>
+      <div class="box_color" data-codigo="J101">
+        <span>J101</span>
+      </div>
+      <div class="box_color" data-codigo="K101">
+        <span>K101</span>
+      </div>
+      <div class="box_color" data-codigo="L101">
+        <span>L101</span>
+      </div>
+      <div class="box_color" data-codigo="M101">
+        <span>M101</span>
+      </div>
+      <div class="box_color" data-codigo="N101">
+        <span>N101</span>
+      </div>
+      <div class="box_color" data-codigo="S101">
+        <span>S101</span>
+      </div>
+      <div class="box_color" data-codigo="V101">
+        <span>V101</span>
+      </div>
+      <div class="box_color" data-codigo="F109">
+        <span>F109</span>
+      </div>
+      <div class="box_color" data-codigo="G109">
+        <span>G109</span>
+      </div>
+      <div class="box_color" data-codigo="M099">
+        <span>M099</span>
+      </div>
+      <div class="box_color" data-codigo="N099">
+        <span>N099</span>
+      </div>
+      <div class="box_color" data-codigo="S099">
+        <span>S099</span>
+      </div>
+      <div class="box_color" data-codigo="V099">
+        <span>V099</span>
+      </div>
+      <div class="box_color" data-codigo="X099">
+        <span>X099</span>
+      </div>
+      <div class="box_color" data-codigo="Y099">
+        <span>Y099</span>
+      </div>
+      <div class="box_color" data-codigo="F100">
+        <span>F100</span>
+      </div>
+      <div class="box_color" data-codigo="G100">
+        <span>G100</span>
+      </div>
+      <div class="box_color" data-codigo="H100">
+        <span>H100</span>
+      </div>
+      <div class="box_color" data-codigo="J100">
+        <span>J100</span>
+      </div>
+      <div class="box_color" data-codigo="K100">
+        <span>K100</span>
+      </div>
+      <div class="box_color" data-codigo="L100">
+        <span>L100</span>
+      </div>
+      <div class="box_color" data-codigo="M100">
+        <span>M100</span>
+      </div>
+      <div class="box_color" data-codigo="N100">
+        <span>N100</span>
+      </div>
+      <div class="box_color" data-codigo="S100">
+        <span>S100</span>
+      </div>
+      <div class="box_color" data-codigo="L099">
+        <span>L099</span>
+      </div>
+      <div class="box_color" data-codigo="K099">
+        <span>K099</span>
+      </div>
+      <div class="box_color" data-codigo="J099">
+        <span>J099</span>
+      </div>
+      <div class="box_color" data-codigo="H099">
+        <span>H099</span>
+      </div>
+      <div class="box_color" data-codigo="G099">
+        <span>G099</span>
+      </div>
+      <div class="box_color" data-codigo="F099">
+        <span>F099</span>
+      </div>
+      <div class="box_color" data-codigo="Y098">
+        <span>Y098</span>
+      </div>
+      <div class="box_color" data-codigo="X098">
+        <span>X098</span>
+      </div>
+      <div class="box_color" data-codigo="V098">
+        <span>V098</span>
+      </div>
+      <div class="box_color" data-codigo="S098">
+        <span>S098</span>
+      </div>
+      <div class="box_color" data-codigo="N098">
+        <span>N098</span>
+      </div>
+      <div class="box_color" data-codigo="M098">
+        <span>M098</span>
+      </div>
+      <div class="box_color" data-codigo="L098">
+        <span>L098</span>
+      </div>
+      <div class="box_color" data-codigo="K098">
+        <span>K098</span>
+      </div>
+      <div class="box_color" data-codigo="J098">
+        <span>J098</span>
+      </div>
+      <div class="box_color" data-codigo="H098">
+        <span>H098</span>
+      </div>
+      <div class="box_color" data-codigo="G098">
+        <span>G098</span>
+      </div>
+      <div class="box_color" data-codigo="F098">
+        <span>F098</span>
+      </div>
+      <div class="box_color" data-codigo="V097">
+        <span>V097</span>
+      </div>
+      <div class="box_color" data-codigo="S097">
+        <span>S097</span>
+      </div>
+      <div class="box_color" data-codigo="N097">
+        <span>N097</span>
+      </div>
+      <div class="box_color" data-codigo="M097">
+        <span>M097</span>
+      </div>
+      <div class="box_color" data-codigo="L097">
+        <span>L097</span>
+      </div>
+      <div class="box_color" data-codigo="K097">
+        <span>K097</span>
+      </div>
+      <div class="box_color" data-codigo="J097">
+        <span>J097</span>
+      </div>
+      <div class="box_color" data-codigo="H097">
+        <span>H097</span>
+      </div>
+      <div class="box_color" data-codigo="G097">
+        <span>G097</span>
+      </div>
+      <div class="box_color" data-codigo="F097">
+        <span>F097</span>
+      </div>
+    </div>
+  </div>
+  <div class="paleta-wrapper" id="tab-grises">
+    <div class="paleta" aria-label="Gris">
+      <div class="box_color" data-codigo="Y141">
+        <span>Y141</span>
+      </div>
+      <div class="box_color" data-codigo="X141">
+        <span>X141</span>
+      </div>
+      <div class="box_color" data-codigo="X122">
+        <span>X122</span>
+      </div>
+      <div class="box_color" data-codigo="X120">
+        <span>X120</span>
+      </div>
+      <div class="box_color" data-codigo="Y101">
+        <span>Y101</span>
+      </div>
+      <div class="box_color" data-codigo="X101">
+        <span>X101</span>
+      </div>
+      <div class="box_color" data-codigo="Y100">
+        <span>Y100</span>
+      </div>
+      <div class="box_color" data-codigo="X100">
+        <span>X100</span>
+      </div>
+      <div class="box_color" data-codigo="Y097">
+        <span>Y097</span>
+      </div>
+      <div class="box_color" data-codigo="X097">
+        <span>X097</span>
+      </div>
+      <div class="box_color" data-codigo="Y096">
+        <span>Y096</span>
+      </div>
+      <div class="box_color" data-codigo="X096">
+        <span>X096</span>
+      </div>
+      <div class="box_color" data-codigo="Y090">
+        <span>Y090</span>
+      </div>
+      <div class="box_color" data-codigo="X090">
+        <span>X090</span>
+      </div>
+      <div class="box_color" data-codigo="X077">
+        <span>X077</span>
+      </div>
+      <div class="box_color" data-codigo="Y072">
+        <span>Y072</span>
+      </div>
+      <div class="box_color" data-codigo="X072">
+        <span>X072</span>
+      </div>
+      <div class="box_color" data-codigo="V168">
+        <span>V168</span>
+      </div>
+      <div class="box_color" data-codigo="S168">
+        <span>S168</span>
+      </div>
+      <div class="box_color" data-codigo="N168">
+        <span>N168</span>
+      </div>
+      <div class="box_color" data-codigo="M168">
+        <span>M168</span>
+      </div>
+      <div class="box_color" data-codigo="L168">
+        <span>L168</span>
+      </div>
+      <div class="box_color" data-codigo="K168">
+        <span>K168</span>
+      </div>
+      <div class="box_color" data-codigo="H168">
+        <span>H168</span>
+      </div>
+      <div class="box_color" data-codigo="G168">
+        <span>G168</span>
+      </div>
+      <div class="box_color" data-codigo="F168">
+        <span>F168</span>
+      </div>
+      <div class="box_color" data-codigo="S167">
+        <span>S167</span>
+      </div>
+      <div class="box_color" data-codigo="N167">
+        <span>N167</span>
+      </div>
+      <div class="box_color" data-codigo="M167">
+        <span>M167</span>
+      </div>
+      <div class="box_color" data-codigo="L167">
+        <span>L167</span>
+      </div>
+      <div class="box_color" data-codigo="K167">
+        <span>K167</span>
+      </div>
+      <div class="box_color" data-codigo="J167">
+        <span>J167</span>
+      </div>
+      <div class="box_color" data-codigo="H167">
+        <span>H167</span>
+      </div>
+      <div class="box_color" data-codigo="G167">
+        <span>G167</span>
+      </div>
+      <div class="box_color" data-codigo="F167">
+        <span>F167</span>
+      </div>
+      <div class="box_color" data-codigo="V162">
+        <span>V162</span>
+      </div>
+      <div class="box_color" data-codigo="J162">
+        <span>J162</span>
+      </div>
+      <div class="box_color" data-codigo="N162">
+        <span>N162</span>
+      </div>
+      <div class="box_color" data-codigo="M162">
+        <span>M162</span>
+      </div>
+      <div class="box_color" data-codigo="L162">
+        <span>L162</span>
+      </div>
+      <div class="box_color" data-codigo="K162">
+        <span>K162</span>
+      </div>
+      <div class="box_color" data-codigo="H162">
+        <span>H162</span>
+      </div>
+      <div class="box_color" data-codigo="G162">
+        <span>G162</span>
+      </div>
+      <div class="box_color" data-codigo="F162">
+        <span>F162</span>
+      </div>
+      <div class="box_color" data-codigo="V157">
+        <span>V157</span>
+      </div>
+      <div class="box_color" data-codigo="S157">
+        <span>S157</span>
+      </div>
+      <div class="box_color" data-codigo="N157">
+        <span>N157</span>
+      </div>
+      <div class="box_color" data-codigo="M157">
+        <span>M157</span>
+      </div>
+      <div class="box_color" data-codigo="L157">
+        <span>L157</span>
+      </div>
+      <div class="box_color" data-codigo="K157">
+        <span>K157</span>
+      </div>
+      <div class="box_color" data-codigo="J157">
+        <span>J157</span>
+      </div>
+      <div class="box_color" data-codigo="H157">
+        <span>H157</span>
+      </div>
+      <div class="box_color" data-codigo="G157">
+        <span>G157</span>
+      </div>
+      <div class="box_color" data-codigo="F157">
+        <span>F157</span>
+      </div>
+      <div class="box_color" data-codigo="V155">
+        <span>V155</span>
+      </div>
+      <div class="box_color" data-codigo="S155">
+        <span>S155</span>
+      </div>
+      <div class="box_color" data-codigo="N155">
+        <span>N155</span>
+      </div>
+      <div class="box_color" data-codigo="M155">
+        <span>M155</span>
+      </div>
+      <div class="box_color" data-codigo="L155">
+        <span>L155</span>
+      </div>
+      <div class="box_color" data-codigo="K155">
+        <span>K155</span>
+      </div>
+      <div class="box_color" data-codigo="J155">
+        <span>J155</span>
+      </div>
+      <div class="box_color" data-codigo="H155">
+        <span>H155</span>
+      </div>
+      <div class="box_color" data-codigo="G155">
+        <span>G155</span>
+      </div>
+      <div class="box_color" data-codigo="F155">
+        <span>F155</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+<script>
+function setActive(tabId){
+  document.querySelectorAll('.tab-button').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.paleta-wrapper').forEach(p=>p.classList.remove('active'));
+  const btn=document.querySelector('.tab-button[data-target="'+tabId+'"]');
+  const sec=document.getElementById(tabId);
+  if(btn) btn.classList.add('active');
+  if(sec) sec.classList.add('active');
+  // update hash without scrolling
+  history.replaceState(null,'', '#'+tabId);
+}
+document.querySelectorAll('.tab-button').forEach(b=>{
+  b.addEventListener('click', ()=>{
+    setActive(b.dataset.target);
+  });
+});
+// On load: if hash matches, show it; else first tab
+const h=location.hash.replace('#','');
+if(h && document.getElementById(h)){
+  setActive(h);
+}else{
+  const first=document.querySelector('.tab-button');
+  if(first) setActive(first.dataset.target);
+}
+</script>
+
+<script>
+// Mapa de códigos a colores extraído del HTML original
+const colorMap = {
+  "X039": "#f5dec8",
+  "L137": "#a0131b",
+  "K137": "#d3071b",
+  "J137": "#d6393a",
+  "H137": "#de9484",
+  "G137": "#e2baad",
+  "F137": "#f3d9c2",
+  "V136": "#f4c4c2",
+  "S136": "#e8a19f",
+  "N136": "#ca4e4e",
+  "M136": "#99141b",
+  "L136": "#de091a",
+  "K136": "#e7464a",
+  "J136": "#ee8684",
+  "H136": "#f2a8a0",
+  "G136": "#f4cfc7",
+  "F136": "#fbe1d7",
+  "V135": "#deaeac",
+  "S135": "#861519",
+  "N135": "#861519",
+  "M135": "#370f0d",
+  "L135": "#99141b",
+  "K135": "#c7091d",
+  "J135": "#e13e3e",
+  "H135": "#f2a8a0",
+  "G135": "#f4cfc7",
+  "F135": "#f9ddce",
+  "V134": "#e2baad",
+  "S134": "#d0968b",
+  "F139": "#f7ded4",
+  "G139": "#f4c8bf",
+  "H139": "#d88f8c",
+  "J139": "#cc7170",
+  "K139": "#b25252",
+  "L139": "#96151a",
+  "M139": "#450f10",
+  "N139": "#b25252",
+  "S139": "#ce9896",
+  "V139": "#e8c4bc",
+  "F140": "#f7ded4",
+  "G140": "#e8c4bc",
+  "H140": "#ee9c9c",
+  "J140": "#d3484e",
+  "K140": "#c4091d",
+  "L140": "#96151a",
+  "N140": "#8a232b",
+  "S140": "#ac7173",
+  "V140": "#cda5ac",
+  "X016": "#a9111c",
+  "Y016": "#260b0b",
+  "X017": "#c4091d",
+  "Y017": "#561111",
+  "X018": "#e30f1a",
+  "Y018": "#b90d1d",
+  "M137": "#450f10",
+  "N137": "#ac7173",
+  "S137": "#caa59d",
+  "V137": "#e8c4bc",
+  "F138": "#f7ded4",
+  "G138": "#e8c4bc",
+  "H138": "#d88f8c",
+  "J138": "#b25252",
+  "K138": "#6a1315",
+  "L138": "#260b0b",
+  "M138": "#100607",
+  "N138": "#945f61",
+  "S138": "#d6b3af",
+  "V138": "#e8c4bc",
+  "F129": "#fbe6da",
+  "G129": "#f9dbd3",
+  "H129": "#f8ccb4",
+  "J129": "#ef8e70",
+  "K129": "#e74d2e",
+  "L129": "#d7091b",
+  "M129": "#861519",
+  "N129": "#c87764",
+  "S129": "#e5aaa2",
+  "V129": "#f9daca",
+  "F130": "#fcefe3",
+  "G130": "#f9daca",
+  "H130": "#f8ccb4",
+  "J130": "#ec765f",
+  "K130": "#e4201b",
+  "L130": "#e30f1a",
+  "M130": "#a3121b",
+  "N130": "#ca8479",
+  "S130": "#e6bdb7",
+  "V130": "#f9dbd3",
+  "F134": "#f9dbd3",
+  "G134": "#f3cfc3",
+  "H134": "#e9ae99",
+  "J134": "#e25b54",
+  "K134": "#d7091b",
+  "L134": "#c7091d",
+  "M134": "#4b1010",
+  "N134": "#bf6465",
+  "Y029": "#e0ae74",
+  "V090": "#efcbb7",
+  "M140": "#561111",
+  "X030": "#eabf75",
+  "Y030": "#ab6b20",
+  "X050": "#d3bc99",
+  "Y050": "#ef8617",
+  "X052": "#f3debb",
+  "Y052": "#fed67e",
+  "X058": "#fdd77a",
+  "Y058": "#ebb224",
+  "X060": "#fdf7ed",
+  "Y060": "#fee3b4",
+  "X155": "#e01f19",
+  "Y155": "#571111",
+  "X162": "#f9dbc8",
+  "Y162": "#cd6d42",
+  "F095": "#fdf2e4",
+  "G095": "#f7d2b8",
+  "H095": "#f8cdaa",
+  "J095": "#f4a777",
+  "K095": "#f0976a",
+  "L095": "#ee8467",
+  "M095": "#ea6848",
+  "N095": "#e2907e",
+  "S095": "#efc1ab",
+  "V095": "#eed4be",
+  "F096": "#fdf2e4",
+  "G096": "#fadcc3",
+  "H096": "#f7cfb2",
+  "J096": "#f39c72",
+  "K096": "#eb7745",
+  "M096": "#a3331b",
+  "N096": "#e49f81",
+  "S096": "#efc3b6",
+  "V096": "#f7dfcf",
+  "X021": "#eed4be",
+  "Y021": "#ec7214",
+  "L096": "#e53d1b",
+  "X029": "#eac28f",
+  "S090": "#e4bba3",
+  "G087": "#fbeacf",
+  "H087": "#f1d3b6",
+  "L087": "#e4670c",
+  "M087": "#ba5518",
+  "G089": "#fce3ca",
+  "J089": "#f6ae77",
+  "N089": "#eca06f",
+  "S089": "#f4dabe",
+  "F090": "#f4ded0",
+  "H090": "#f1d3b6",
+  "J090": "#f0b487",
+  "K090": "#dc7c4a",
+  "M090": "#d85b2d",
+  "S087": "#e6c599",
+  "V087": "#f4dabe",
+  "F089": "#fdf5e8",
+  "H089": "#ecd5a9",
+  "K089": "#f4a263",
+  "L089": "#eb6c14",
+  "M089": "#d56717",
+  "N090": "#deb095",
+  "J087": "#e6c599",
+  "K087": "#f1ab6a",
+  "N087": "#d9af7e",
+  "V089": "#fce3ca",
+  "G090": "#f1dac3",
+  "L090": "#e36c33",
+  "F087": "#fdf5e8",
+  "Y027": "#f5a817",
+  "X027": "#f8df16",
+  "V081": "#e0c291",
+  "Y115": "#fed954",
+  "Y113": "#ecbb64",
+  "X113": "#fae5d0",
+  "S081": "#d6b274",
+  "N081": "#cda35a",
+  "M081": "#bc8710",
+  "L081": "#d59e10",
+  "K081": "#e0b255",
+  "J081": "#e4ba65",
+  "H081": "#f3d69a",
+  "G081": "#f8e3ac",
+  "F081": "#f5f1d9",
+  "V079": "#f0dea0",
+  "S079": "#f7d87c",
+  "N079": "#f2ce42",
+  "M079": "#e5ab15",
+  "L079": "#f5a915",
+  "K079": "#f4e73f",
+  "J079": "#f6e47d",
+  "H079": "#f4ed9e",
+  "G079": "#f5f7d4",
+  "F079": "#f6f8de",
+  "V077": "#f5eaa2",
+  "S077": "#f4de7d",
+  "N077": "#eeda41",
+  "M077": "#ceb20f",
+  "L077": "#f6c916",
+  "K077": "#f6e12f",
+  "J077": "#f6e47d",
+  "H077": "#f3f1ad",
+  "G077": "#f5f7d4",
+  "F077": "#f6f8de",
+  "V072": "#e7e5a6",
+  "S072": "#ddd981",
+  "N072": "#cfd058",
+  "M072": "#c5b814",
+  "L072": "#f7d416",
+  "K072": "#e7df39",
+  "J072": "#f3eb72",
+  "H072": "#f2ec8b",
+  "G072": "#f5f3bd",
+  "F072": "#f6f8de",
+  "V151": "#c5b3ba",
+  "H148": "#b8a4cc",
+  "J148": "#b8a4cc",
+  "K148": "#5b4291",
+  "L148": "#100a22",
+  "M148": "#010102",
+  "N148": "#9882b7",
+  "S148": "#bcabd0",
+  "V148": "#cec5d9",
+  "F149": "#f6edf1",
+  "G149": "#e8ddea",
+  "H149": "#c9b9c6",
+  "J149": "#c9b9c6",
+  "K149": "#917c9d",
+  "L149": "#4b3155",
+  "M149": "#010102",
+  "N149": "#9b8ba2",
+  "S149": "#c5b3ba",
+  "V149": "#d9d1d9",
+  "F151": "#fae8e8",
+  "G151": "#edd4d7",
+  "H151": "#d1afba",
+  "J151": "#b591a3",
+  "K151": "#916f81",
+  "L151": "#452b38",
+  "M151": "#010102",
+  "N151": "#6f5a6b",
+  "S151": "#a798a3",
+  "V145": "#e2c1cd",
+  "F148": "#eee2ea",
+  "G148": "#d6c8df",
+  "S145": "#b895ad",
+  "N145": "#a17494",
+  "M145": "#430e11",
+  "L145": "#8b3867",
+  "K145": "#b46491",
+  "J145": "#d298ae",
+  "H145": "#dca9c2",
+  "G145": "#e9c4ce",
+  "F145": "#f7d9dd",
+  "S143": "#d2b1c7",
+  "N143": "#ad88a7",
+  "M143": "#120707",
+  "L143": "#430e11",
+  "K143": "#941139",
+  "J143": "#ca6b8e",
+  "H143": "#e299b0",
+  "G143": "#f7d9dd",
+  "F143": "#f8e7ea",
+  "V141": "#e9c4ce",
+  "S141": "#d4a9ba",
+  "N141": "#a36985",
+  "M141": "#290c0c",
+  "L141": "#571111",
+  "K141": "#a8102e",
+  "J141": "#bc374e",
+  "H141": "#e07286",
+  "G141": "#e5bcc2",
+  "F141": "#f7d9dd",
+  "Y167": "#062623",
+  "X167": "#98d0c5",
+  "Y151": "#000000",
+  "X151": "#66674f",
+  "Y149": "#000000",
+  "X149": "#5d7c73",
+  "Y148": "#263827",
+  "X148": "#929178",
+  "Y145": "#483f19",
+  "X145": "#b6b689",
+  "Y139": "#0a180c",
+  "X139": "#53693a",
+  "Y122": "#29847a",
+  "Y120": "#a4b7b9",
+  "Y109": "#123d19",
+  "X109": "#74a781",
+  "Y087": "#828771",
+  "X087": "#bdbd9c",
+  "Y081": "#515a1e",
+  "X081": "#dedac3",
+  "V071": "#e3ddbb",
+  "S071": "#c8cb94",
+  "N071": "#bbb389",
+  "M071": "#aaa76e",
+  "L071": "#ccc955",
+  "K071": "#e1de6d",
+  "J071": "#eee689",
+  "H071": "#f7f19a",
+  "G071": "#f7f3ad",
+  "F071": "#fcf8d9",
+  "V060": "#f0ebd7",
+  "S060": "#c0c0a4",
+  "N060": "#a7a87f",
+  "M060": "#343d17",
+  "L060": "#77781f",
+  "K060": "#a5b061",
+  "J060": "#c8cb94",
+  "H060": "#e3eac3",
+  "G060": "#f7f6e0",
+  "F060": "#fefdf5",
+  "V058": "#e3eac3",
+  "S058": "#ccd8b4",
+  "N058": "#a2b27b",
+  "M058": "#7aa04a",
+  "L058": "#8ea656",
+  "K058": "#abc07e",
+  "J058": "#cbdfa5",
+  "H058": "#d9e7bb",
+  "G058": "#e6edc3",
+  "F058": "#eff2da",
+  "V052": "#dde2d2",
+  "S052": "#a4c2a8",
+  "N052": "#6ea97f",
+  "M052": "#0a6e2a",
+  "L052": "#1fa02e",
+  "K052": "#6db664",
+  "J052": "#a1cd95",
+  "H052": "#bedaaf",
+  "G052": "#d4e6cd",
+  "F052": "#f0f6eb",
+  "V050": "#cad2bf",
+  "S050": "#bdbeae",
+  "N050": "#91a487",
+  "M050": "#0e1f0f",
+  "L050": "#3c5b33",
+  "K050": "#8a986d",
+  "J050": "#a4c2a8",
+  "H050": "#adcbb1",
+  "G050": "#dde2d2",
+  "F050": "#eaece6",
+  "V048": "#eaece6",
+  "S048": "#bac7bd",
+  "N048": "#78938e",
+  "M048": "#083026",
+  "L048": "#37645b",
+  "K048": "#8aaba7",
+  "J048": "#acc0b9",
+  "H048": "#d4d9d5",
+  "G048": "#ecf2ee",
+  "F048": "#f6f8f1",
+  "V044": "#b3ccc5",
+  "S044": "#82b2ab",
+  "N044": "#579488",
+  "M044": "#124838",
+  "L044": "#136f59",
+  "K044": "#489680",
+  "J044": "#75b39c",
+  "H044": "#aad5c5",
+  "G044": "#d5e5d8",
+  "F044": "#fafcfa",
+  "V043": "#d5e5d8",
+  "S043": "#aab8aa",
+  "N043": "#609888",
+  "M043": "#094b20",
+  "L043": "#087443",
+  "K043": "#1ea371",
+  "J043": "#65ba97",
+  "H043": "#aad5c5",
+  "F043": "#f6f8f1",
+  "V039": "#dfe6de",
+  "S039": "#c1e0db",
+  "N039": "#8cccc5",
+  "M039": "#046644",
+  "L039": "#1b9668",
+  "L038": "#1d9f72",
+  "M038": "#05583f",
+  "N038": "#1ea07f",
+  "S038": "#3bb49f",
+  "V038": "#9dd4d0",
+  "F039": "#edf5ef",
+  "G039": "#bce0d9",
+  "H039": "#a8d6cc",
+  "J039": "#81c6b3",
+  "K039": "#42b28c",
+  "V033": "#e1e3d8",
+  "F037": "#eff3e7",
+  "G037": "#bce0d9",
+  "H037": "#94cfc8",
+  "J037": "#6dc1c2",
+  "K037": "#57b6a9",
+  "L037": "#2b9187",
+  "M037": "#09432b",
+  "N037": "#70b9bf",
+  "S037": "#afd8d6",
+  "V037": "#dee3dd",
+  "F038": "#e1f0e8",
+  "G038": "#a8d6cc",
+  "H038": "#94cfc8",
+  "J038": "#57b6a9",
+  "K038": "#48b595",
+  "S033": "#afc3bc",
+  "N033": "#177a79",
+  "M033": "#041511",
+  "L033": "#086c67",
+  "K033": "#37a49e",
+  "J033": "#88cac6",
+  "H033": "#bad9d8",
+  "G033": "#e0e7e0",
+  "F033": "#e4ebe3",
+  "V032": "#f6f8ea",
+  "S032": "#dbddd0",
+  "N032": "#629491",
+  "M032": "#2c7a72",
+  "L032": "#2c7a72",
+  "K032": "#91c6c6",
+  "J032": "#c3e0db",
+  "H032": "#e3ecdc",
+  "G032": "#f6f8ea",
+  "F032": "#f6f8ea",
+  "V031": "#dfe1d2",
+  "S031": "#bcc8c0",
+  "N031": "#8caba8",
+  "M031": "#0b292b",
+  "L031": "#0b4546",
+  "K031": "#0f6c74",
+  "J031": "#549fa4",
+  "H031": "#91c6c6",
+  "G031": "#bad9d8",
+  "F031": "#e4ebe3",
+  "X168": "#fcfbf9",
+  "Y168": "#0b0e2a",
+  "Y157": "#11183a",
+  "X157": "#096ca6",
+  "Y143": "#234b95",
+  "X143": "#7d8895",
+  "Y138": "#020202",
+  "X138": "#062139",
+  "Y137": "#4e6a71",
+  "X137": "#dadace",
+  "Y079": "#114f89",
+  "X079": "#85c0e5",
+  "Y077": "#113288",
+  "V030": "#ced0c2",
+  "K030": "#158195",
+  "S030": "#8eaebc",
+  "N030": "#4f8395",
+  "M030": "#062139",
+  "L030": "#0c5e75",
+  "J030": "#89c1d4",
+  "H030": "#98d4e5",
+  "G030": "#c3dfe9",
+  "F030": "#ebede2",
+  "V029": "#dadddf",
+  "S029": "#dadddf",
+  "N029": "#88a1af",
+  "M029": "#103b4d",
+  "L029": "#177b9a",
+  "K029": "#7cb3cd",
+  "J029": "#add4e5",
+  "H029": "#cee9f3",
+  "G029": "#e5f1f3",
+  "F029": "#f4f9f8",
+  "V027": "#b9babb",
+  "S027": "#a4a8a9",
+  "N027": "#5c687e",
+  "M027": "#132745",
+  "L027": "#394d70",
+  "K027": "#8595a9",
+  "J027": "#a9b2b8",
+  "H027": "#c1c6c7",
+  "G027": "#dce0df",
+  "F027": "#e5e9e6",
+  "V021": "#91a8c8",
+  "S021": "#7e95bc",
+  "N021": "#394d70",
+  "M021": "#0c0a20",
+  "L021": "#3463a5",
+  "K021": "#778fc4",
+  "J021": "#96b2d9",
+  "H021": "#a7c1e1",
+  "G021": "#c0d5eb",
+  "F021": "#e5e9e6",
+  "V018": "#d1d8da",
+  "S018": "#b6c7d1",
+  "L018": "#4e7eaa",
+  "N018": "#7993ae",
+  "M018": "#0c3968",
+  "K018": "#6995ba",
+  "J018": "#6995ba",
+  "H018": "#adc8dd",
+  "G018": "#c2d3dc",
+  "F018": "#d7e5ea",
+  "V017": "#a5b4c8",
+  "S017": "#7993ae",
+  "N017": "#214677",
+  "M017": "#0a0b25",
+  "L017": "#132c73",
+  "K017": "#5483b6",
+  "J017": "#85b4da",
+  "H017": "#97c5e6",
+  "G017": "#aad5eb",
+  "F017": "#e6edf1",
+  "V016": "#b7cbd0",
+  "S016": "#75a7d1",
+  "N016": "#4385b0",
+  "MA16": "#162353",
+  "L016": "#0d6aab",
+  "K016": "#57a0cf",
+  "J016": "#6db6df",
+  "H016": "#6db6df",
+  "G016": "#aad5eb",
+  "F016": "#d7e5ea",
+  "Y140": "#a97349",
+  "X140": "#d9c1aa",
+  "Y136": "#c2925a",
+  "X136": "#ebceaa",
+  "Y135": "#581511",
+  "X135": "#f5dec8",
+  "Y134": "#7c5838",
+  "X134": "#d4b7ab",
+  "Y130": "#050403",
+  "X130": "#ecd9c9",
+  "Y129": "#581511",
+  "X129": "#f2d4b2",
+  "Y095": "#7e3b24",
+  "X095": "#b09078",
+  "Y089": "#632118",
+  "X089": "#b79792",
+  "Y071": "#a68469",
+  "X071": "#ecd9c9",
+  "Y048": "#250b0b",
+  "X048": "#bc8872",
+  "Y044": "#965619",
+  "X044": "#e2c781",
+  "Y043": "#ebae64",
+  "X043": "#f5d9a6",
+  "Y039": "#8b684a",
+  "Y038": "#581511",
+  "X038": "#d4b7ab",
+  "Y037": "#050403",
+  "X037": "#b09078",
+  "Y033": "#7e1c18",
+  "X033": "#e5c998",
+  "Y032": "#91141a",
+  "X032": "#cca791",
+  "Y031": "#e0a055",
+  "X031": "#fee5b5",
+  "V122": "#d4aba5",
+  "S122": "#c99789",
+  "N122": "#ae6e5e",
+  "M122": "#4d1010",
+  "L122": "#4d1010",
+  "K122": "#771c17",
+  "J122": "#ad5333",
+  "H122": "#c17e68",
+  "G122": "#d9af9b",
+  "F122": "#f6d6cf",
+  "V120": "#d7b2aa",
+  "S120": "#b18985",
+  "N120": "#582518",
+  "M120": "#1e0a0a",
+  "L120": "#771c17",
+  "K120": "#b18985",
+  "J120": "#d7b2aa",
+  "H120": "#edc8c2",
+  "G120": "#f6dcd3",
+  "F120": "#fdf6ed",
+  "V115": "#c09c8b",
+  "S115": "#9b7769",
+  "N115": "#4b2012",
+  "M115": "#070505",
+  "L115": "#48180f",
+  "K115": "#48180f",
+  "J115": "#68351f",
+  "H115": "#95644d",
+  "G115": "#c7a38e",
+  "F115": "#f7dccc",
+  "V113": "#d8b8aa",
+  "S113": "#c09c8b",
+  "N113": "#a5735c",
+  "M113": "#160808",
+  "L113": "#2b0c0c",
+  "K113": "#773617",
+  "J113": "#985c40",
+  "H113": "#c39679",
+  "G113": "#e4c5af",
+  "F113": "#f7dccc",
+  "V109": "#ddbfb1",
+  "S109": "#a98867",
+  "N109": "#6d4829",
+  "L109": "#070505",
+  "K109": "#582e1b",
+  "J109": "#8c6c58",
+  "H109": "#ceb3a2",
+  "M109": "#070505",
+  "V100": "#ceb59c",
+  "F101": "#f7dec5",
+  "G101": "#e6d6bd",
+  "H101": "#d6b5a5",
+  "J101": "#8c6b5a",
+  "K101": "#522919",
+  "L101": "#3a1908",
+  "M101": "#210808",
+  "N101": "#6b4a29",
+  "S101": "#ad9463",
+  "V101": "#c5ad94",
+  "F109": "#f7e6de",
+  "G109": "#efcec5",
+  "M099": "#523a10",
+  "N099": "#ad9463",
+  "S099": "#ceb59c",
+  "V099": "#e6d6bd",
+  "X099": "#dec58c",
+  "Y099": "#d6bdad",
+  "F100": "#f7e6de",
+  "G100": "#e6cead",
+  "H100": "#b59c73",
+  "J100": "#9c7b4a",
+  "K100": "#523a10",
+  "L100": "#3a1908",
+  "M100": "#000000",
+  "N100": "#6b5221",
+  "S100": "#a58c63",
+  "L099": "#7f661b",
+  "K099": "#af934d",
+  "J099": "#c9b682",
+  "H099": "#e6d9b9",
+  "G099": "#fcfae4",
+  "F099": "#fefcf8",
+  "Y098": "#704926",
+  "X098": "#d5b898",
+  "V098": "#f5e2cb",
+  "S098": "#dbcaad",
+  "N098": "#b4965f",
+  "M098": "#4e2911",
+  "L098": "#7d571b",
+  "K098": "#b18a4e",
+  "J098": "#d9bc8f",
+  "H098": "#edd7ab",
+  "G098": "#fbf2d8",
+  "F098": "#fdf7ea",
+  "V097": "#f0dcc1",
+  "S097": "#e2cead",
+  "N097": "#b4965f",
+  "M097": "#4e2911",
+  "L097": "#a06617",
+  "K097": "#c4994d",
+  "J097": "#c9a46e",
+  "H097": "#edd7ab",
+  "G097": "#f5e2cb",
+  "F097": "#f7ede0",
+  "Y141": "#19180c",
+  "X141": "#94898d",
+  "X122": "#c8b29a",
+  "X120": "#d7c5bf",
+  "Y101": "#7c7d8a",
+  "X101": "#dfdee4",
+  "Y100": "#343844",
+  "X100": "#aeadb1",
+  "Y097": "#889198",
+  "X097": "#9a9597",
+  "Y096": "#54523d",
+  "X096": "#847a71",
+  "Y090": "#685953",
+  "X090": "#9a9597",
+  "X077": "#e8e1d3",
+  "Y072": "#63758a",
+  "X072": "#c0b9af",
+  "V168": "#b0a5a6",
+  "S168": "#757175",
+  "N168": "#403438",
+  "M168": "#010100",
+  "L168": "#010100",
+  "K168": "#584e51",
+  "H168": "#d7c5bf",
+  "G168": "#f2e7e6",
+  "F168": "#fdfbf8",
+  "S167": "#887981",
+  "N167": "#010100",
+  "M167": "#010100",
+  "L167": "#281c24",
+  "K167": "#584e51",
+  "J167": "#72696e",
+  "H167": "#a29a9b",
+  "G167": "#e5d2d0",
+  "F167": "#f2e7e6",
+  "V162": "#a29a9b",
+  "J162": "#999798",
+  "N162": "#2e2d36",
+  "M162": "#010100",
+  "L162": "#030507",
+  "K162": "#727281",
+  "H162": "#b7b1ae",
+  "G162": "#c6c4c0",
+  "F162": "#ede6e0",
+  "V157": "#c5beb7",
+  "S157": "#b7b1ae",
+  "N157": "#646163",
+  "M157": "#010100",
+  "L157": "#2d2720",
+  "K157": "#797573",
+  "J157": "#a69794",
+  "H157": "#d0bcb5",
+  "G157": "#e4dbd1",
+  "F157": "#fdfcf6",
+  "V155": "#c1aba0",
+  "S155": "#b7a399",
+  "N155": "#584b41",
+  "M155": "#010100",
+  "L155": "#21130c",
+  "K155": "#4d3f32",
+  "J155": "#91837c",
+  "H155": "#c9b3a7",
+  "G155": "#e5d3c7",
+  "F155": "#f0e1da"
+};
+document.querySelectorAll('.box_color').forEach(box => {
+  const code = box.dataset.codigo;
+  if (code && colorMap[code]) {
+    box.style.background = colorMap[code];
+    // contraste simple: texto blanco si fondo oscuro (puede mejorarse)
+    box.style.color = '#fff';
+    const label = document.createElement('div');
+    label.className = 'code-label';
+    label.textContent = code;
+    label.style.position='absolute';
+    label.style.bottom='4px';
+    label.style.left='4px';
+    label.style.fontSize='10px';
+    box.style.position='relative';
+    box.appendChild(label);
+  }
+});
+</script>
+</body>
+</html>
